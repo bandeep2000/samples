@@ -29,14 +29,23 @@ def parse_yml(yaml_file_path):
     return config_details
 
 def test_yaml_correct():
+    """
+     tests return value in dict
+    """
     assert type(parse_yml('test.yml')) is dict
 
 
 def test_yaml_correct1():
+    """
+    tests IOError exception is raised
+    """
     with pytest.raises(IOError):
       parse_yml('test1.yml')
 
 
 def test_yaml_correct2():
+    """
+     tests pytest excpeption is raised
+    """
     with pytest.raises(AssertionError):
       assert type(parse_yml('test_incorrect.yml')) is dict
