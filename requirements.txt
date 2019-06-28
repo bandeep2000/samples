@@ -1,0 +1,6 @@
+paramiko
+influxdb
+pyyaml
+pylint
+# Somtime pytest gives warnings, to suppress install this
+cryptography==2.4.2

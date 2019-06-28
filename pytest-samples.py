@@ -2,7 +2,14 @@ import yaml
 import logging
 import pytest
 
+
 """
+Run as:
+pytests -sxv <script name>
+Prerequisites:
+Run - pip install -r requirements.txt
+
+###
 parser = argparse.ArgumentParser()
 
 parser.add_argument('-c', action='store', dest='configfile',required = True,
