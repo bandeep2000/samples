@@ -5,4 +5,5 @@ jobs:
       - image: python:2.7 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
+      - run: pip install pytest # run the `echo` command
       - run: pytest -svx pytest-samples.py # run the `echo` command
