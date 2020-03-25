@@ -6,6 +6,7 @@ node {
             
         } else {
             echo 'I execute elsewhere'
+            sh 'echo $GIT_COMMIT'
         }
     }
 }
