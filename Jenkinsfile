@@ -7,6 +7,8 @@ node {
         } else {
             echo 'I execute elsewhere'
             sh 'echo $GIT_COMMIT'
+            sh 'echo $env.GIT_COMMIT'
+            sh 'printenv'
         }
     }
 }
