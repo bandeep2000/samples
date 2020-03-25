@@ -35,7 +35,7 @@ def parse_yml(yaml_file_path):
     config_details = yaml.load(config_details_stream)
     return config_details
 
-def test_yaml_correct():
+def tes1_yaml_correct():
     """
      tests return value in dict
     """
@@ -50,7 +50,7 @@ def test_yaml_correct1():
       parse_yml('test1.yml')
 
 
-def test_yaml_correct2():
+def tes_yaml_correct2():
     """
      tests pytest excpeption is raised
     """
